@@ -11,7 +11,7 @@ echo "Starting server PRESS CTRL-C to exit"
 # Tip: Make a local copy of this script to avoid it being overwritten by steam.
 # NOTE: Minimum password length is 5 characters & Password cant be in the server name.
 # NOTE: You need to make sure the ports 2456-2458 is being forwarded to your server through your local router & firewall.
-box64 ./valheim_server.x86_64 "$VALHEIM_EXTRA_ARGS"\
+box64 ./valheim_server.x86_64 $VALHEIM_EXTRA_ARGS \
     -nographics \
     -batchmode \
     -name "$VALHEIM_SERVER_NAME" \
