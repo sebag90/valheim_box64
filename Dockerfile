@@ -5,7 +5,7 @@ WORKDIR /app
 # Install deps
 RUN \
 dpkg --add-architecture armhf;\
-apt-get update && apt-get install -y curl libc6:armhf vim git cmake python3 gcc-arm-linux-gnueabihf;
+apt-get update && apt-get install -y curl libc6:armhf vim git cmake python3 gcc-arm-linux-gnueabihf libpulse0 libpulse-dev libatomic1 libc6;
 
 WORKDIR /root
 # Install box86
